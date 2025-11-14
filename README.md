@@ -8,8 +8,8 @@ AAAI 2026
 
 ## Installation
 ```bash
-git clone https://github.com/SHlHAB/reward-profiling-aaai.git
-cd reward-profiling-aaai
+git clone https://github.com/SHlHAB/reward-profiling.git
+cd reward-profiling
 pip install -r requirements.txt
 ```
 
