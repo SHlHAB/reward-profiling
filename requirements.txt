@@ -1,3 +1,8 @@
 torch
 numpy
 gymnasium
+stable-baselines3
+sb3-contrib
+pybullet-gymnasium
+wandb
+pandas

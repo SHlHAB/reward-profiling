@@ -1,13 +1,18 @@
-# profiling_rl.py
+"""Reward profiling framework for stabilizing policy gradient methods.
+
+This script implements the reward profiling approach from:
+"Stabilizing Policy Gradient Methods via Reward Profiling" (AAAI 2026)
+"""
 
 import os
 import argparse
+
 import numpy as np
+import pandas as pd
 import torch
 import gymnasium as gym
-import pybullet_envs_gymnasium  # registers Bullet envs
+import pybullet_envs_gymnasium
 import wandb
-
 from stable_baselines3 import PPO, DDPG, TD3
 from sb3_contrib import TRPO
 
@@ -207,9 +212,8 @@ def main():
         log_dir=args.log_dir,
         wandb_project=args.wandb_project,
     )
-    # optionally: save history as CSV
+    # Save history as CSV
     out_csv = os.path.join(args.log_dir, f"history_{args.algo}_{args.env}_{args.variant}_seed{args.seed}.csv")
-    import pandas as pd
     pd.DataFrame(hist).to_csv(out_csv, index=False)
     print(f"Done; history saved to {out_csv}")
 

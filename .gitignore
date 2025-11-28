@@ -4,3 +4,15 @@ __pycache__/
 .env/
 .venv/
 .ipynb_checkpoints/
+
+# Logs and outputs
+logs/*
+!logs/.gitkeep
+wandb/
+*.csv
+*.zip
+
+# Model checkpoints
+*.pkl
+*.pt
+*.pth
