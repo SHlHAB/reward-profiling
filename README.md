@@ -2,7 +2,7 @@
 
 This repository provides the minimal implementation accompanying the paper:
 
-[**Stabilizing Policy Gradient Methods via Reward Profiling**  ](https://arxiv.org/abs/2511.16629)
+[**Stabilizing Policy Gradient Methods via Reward Profiling**  ](https://arxiv.org/abs/2511.16629) (AAAI'26)
 
 ## Installation
 ```bash
