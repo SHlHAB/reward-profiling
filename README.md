@@ -2,9 +2,7 @@
 
 This repository provides the minimal implementation accompanying the paper:
 
-**"Stabilizing Policy Gradient Methods via Reward Profiling"**  
-AAAI 2026  
-[Paper Link](https://arxiv.org/abs/2511.16629)
+[**"Stabilizing Policy Gradient Methods via Reward Profiling"**  ](https://arxiv.org/abs/2511.16629)
 
 ## Installation
 ```bash
@@ -19,10 +17,7 @@ pip install -r requirements.txt
 ```bash
 # Run PPO with three-points profiling on CartPole
 python profiling_rl.py --algo ppo --env CartPole-v1 --variant three-points
-```
 
-### Advanced Examples
-```bash
 # PPO on HalfCheetah with lookback profiling
 python profiling_rl.py --algo ppo --env HalfCheetahBulletEnv-v0 --variant lookback \
   --total-timesteps 500000 --episodes-budget 50 --seed 42
@@ -64,10 +59,13 @@ MIT License.
 
 ## Citation
 ```bibtex
-@inproceedings{ahmed2026rewardprofiling,
-  title={Stabilizing Policy Gradient Methods via Reward Profiling},
-  author={Ahmed, Shihab and Bergou, El Houcine and Wang, Yue and Dutta, Aritra},
-  booktitle={AAAI Conference on Artificial Intelligence},
-  year={2026}
+@misc{ahmed2025stabilizingpolicygradientmethods,
+      title={Stabilizing Policy Gradient Methods via Reward Profiling}, 
+      author={Shihab Ahmed and El Houcine Bergou and Aritra Dutta and Yue Wang},
+      year={2025},
+      eprint={2511.16629},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2511.16629}, 
 }
 ```
