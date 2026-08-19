@@ -58,14 +58,19 @@ ENV_ID=HopperBulletEnv-v0 ./run.sh
 MIT License.
 
 ## Citation
+
+If you use this work, please cite:
+
+Ahmed, S., Bergou, E. H., Wang, Y., & Dutta, A. (2026). **Stabilizing Policy Gradient Methods via Reward Profiling.** *Proceedings of the AAAI Conference on Artificial Intelligence, 40*(24), 19560–19568. https://doi.org/10.1609/aaai.v40i24.39035
+
 ```bibtex
-@misc{ahmed2025stabilizingpolicygradientmethods,
-      title={Stabilizing Policy Gradient Methods via Reward Profiling}, 
-      author={Shihab Ahmed and El Houcine Bergou and Aritra Dutta and Yue Wang},
-      year={2025},
-      eprint={2511.16629},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2511.16629}, 
+@inproceedings{ahmed2026stabilizing,
+  title={Stabilizing Policy Gradient Methods via Reward Profiling},
+  author={Ahmed, Shihab and Bergou, El Houcine and Wang, Yue and Dutta, Aritra},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={40},
+  number={24},
+  pages={19560--19568},
+  year={2026},
+  doi={10.1609/aaai.v40i24.39035}
 }
-```
